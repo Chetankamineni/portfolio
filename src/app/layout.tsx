@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"; // <-- Import
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chetan Kamineni | Software Developer",
+  title: "Chetan's Portfolio",
   description: "Portfolio of Chetan Kamineni, a software developer specializing in React, Node.js, and Machine Learning.",
 };
 

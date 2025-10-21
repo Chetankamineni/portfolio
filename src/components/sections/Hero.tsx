@@ -42,16 +42,18 @@ export const Hero = () => {
       >
         A Software Developer specializing in full-stack applications and machine learning, based in Hyderabad, India.
       </motion.p>
-      
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         className="mt-8 flex flex-wrap justify-center items-center gap-4"
       >
-        <a href="/Chetan-Kamineni-Resume-20251020.pdf" download>
+        {/* --- UPDATED LINK --- */}
+        <a href="/chetan_kamineni resume.pdf" download="Chetan_Kamineni_Resume.pdf">
           <Button>Download Resume</Button>
         </a>
+        {/* -------------------- */}
         <div className="flex items-center gap-4">
           <Link href="https://github.com/Chetankamineni" target="_blank" aria-label="GitHub">
             <Github className="text-zinc-500 dark:text-zinc-400 hover:text-blue-600 transition-colors" />

@@ -14,7 +14,7 @@ export const Contact = () => {
             >
                 <h2 className="text-3xl font-bold">Get In Touch</h2>
                 <p className="max-w-md mx-auto mt-4 text-zinc-600 dark:text-zinc-400">
-                    I'm currently open to new opportunities. My inbox is always open, so feel free to reach out via email!
+                    I&apos;m currently open to new opportunities. My inbox is always open, so feel free to reach out via email!
                 </p>
                 <div className="mt-8">
                     <a href="mailto:sridhar.kamineni@outlook.com">

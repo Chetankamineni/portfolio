@@ -25,7 +25,7 @@ const projects = [
     description: "Developed a responsive weather application using React and Vite, integrating the OpenWeatherMap API to provide real-time weather data for any global location.",
     tags: ["React", "Vite", "OpenWeatherMap API", "Vercel"],
     githubUrl: "https://github.com/Chetankamineni/weather-app",
-    liveUrl: "https://weather-app-chetan.vercel.app/",
+    liveUrl: "https://weatherapp-chetan.vercel.app/",
   }
 ];
 

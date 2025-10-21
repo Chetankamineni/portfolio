@@ -15,6 +15,7 @@ import { VscodeIcon } from "../../../public/icons/VscodeIcon";
 
 // List using all custom icons with correct styling
 const skillsList = [
+  {name: "Java", icon: <span className="h-10 w-10 text-[#007396]" />}, // Simple text icon
   { name: "Python", icon: <PythonIcon className="h-10 w-10" /> }, // Multi-color, no text class
   { name: "React.js", icon: <ReactIcon className="h-10 w-10 text-[#61DAFB]" /> },
   { name: "Node.js", icon: <NodeIcon className="h-10 w-10 text-[#8CC84B]" /> },
