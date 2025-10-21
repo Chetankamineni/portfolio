@@ -32,7 +32,15 @@ const projects = [
 export const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4">
-      <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+        <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-3xl font-bold text-center mb-12"
+        >
+            Projects
+        </motion.h2>
       <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <motion.div
@@ -41,14 +49,18 @@ export const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
+            whileHover={{
+                scale: 1.03,
+                boxShadow: "0px 0px 15px rgba(59, 130, 246, 0.4)",
+            }}
+            className="h-full" // Added for consistent height
           >
-            {/* --- CSS classes for equal height are on this Card component --- */}
-            <Card className="bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 h-full flex flex-col">
+            <Card className="bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 h-full flex flex-col rounded-2xl transition-colors duration-300 hover:border-blue-500/60">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription className="pt-2 text-zinc-600 dark:text-zinc-400">{project.description}</CardDescription>
               </CardHeader>
-              <CardContent className="flex-grow"> {/* This makes the content area expand */}
+              <CardContent className="flex-grow">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
                 </div>
