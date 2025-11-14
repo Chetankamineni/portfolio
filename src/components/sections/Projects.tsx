@@ -12,7 +12,7 @@ const projects = [
     description: "Designed and developed a full-stack media and gaming web application using React.js (frontend) and Node.js with Express (backend), integrating TMDB and RAWG APIs.",
     tags: ["React.js", "Node.js", "Express", "Vercel", "Render"],
     githubUrl: "https://github.com/Chetankamineni/continuum-app",
-    liveUrl: "https://continuum-app.vercel.app/",
+    liveUrl: "https://continuum-one.vercel.app/",
   },
   {
     title: "Music Popularity Prediction (ML)",
