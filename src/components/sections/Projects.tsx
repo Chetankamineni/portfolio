@@ -58,7 +58,7 @@ export const Projects = () => {
                 scale: 1.03,
                 boxShadow: "0px 0px 15px rgba(59, 130, 246, 0.4)",
             }}
-            className="h-full" // Added for consistent height
+            className="h-full rounded-2xl overflow-hidden transform-gpu will-change-transform"
           >
             <Card className="bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 h-full flex flex-col rounded-2xl transition-colors duration-300 hover:border-blue-500/60">
               <CardHeader>

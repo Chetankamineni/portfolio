@@ -14,7 +14,7 @@ export const Hero = () => {
         transition={{ duration: 0.5 }}
         className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-black to-zinc-600 dark:from-white dark:to-zinc-400"
       >
-        Chetan Kamineni
+        Hi, I'm Chetan Kamineni
       </motion.h1>
 
       {/* --- NEW AVAILABILITY INDICATOR --- */}
