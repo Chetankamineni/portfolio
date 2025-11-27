@@ -19,7 +19,7 @@ export const Contact = () => {
                 <div className="mt-8">
                     <a href="mailto:sridhar.kamineni@outlook.com">
                         <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-                            Say Hello 📧
+                            Say Hello
                         </Button>
                     </a>
                 </div>

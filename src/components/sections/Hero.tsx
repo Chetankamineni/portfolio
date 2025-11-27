@@ -40,7 +40,7 @@ export const Hero = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-300"
       >
-        A Software Developer specializing in full-stack applications and machine learning, based in Hyderabad, India.
+        Specialized in building full-stack and machine learning applications.
       </motion.p>
 
       <motion.div
