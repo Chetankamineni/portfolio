@@ -20,15 +20,20 @@ const experiences = [
 export const Experience = () => {
   return (
     <section id="experience" className="py-20 px-4">
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="text-3xl font-bold text-center mb-16"
-      >
-        Professional Experience
-      </motion.h2>
+      <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-12"
+        >
+            <h2 className="text-3xl font-bold mb-4">
+                Experience
+            </h2>
+            <p className="text-lg text-zinc-600 dark:text-zinc-400 font-mono">
+                My professional work history and roles
+            </p>
+        </motion.div>
 
       <div className="max-w-4xl mx-auto">
         <div className="relative border-l-2 border-zinc-200 dark:border-zinc-800 ml-3 md:ml-6 space-y-12">
