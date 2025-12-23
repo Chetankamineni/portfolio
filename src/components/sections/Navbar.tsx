@@ -39,14 +39,17 @@ export const Navbar = () => {
         className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90vw] sm:w-auto"
       >
         <div className="flex items-center justify-between gap-4 px-4 py-2 bg-white/50 dark:bg-black/50 border border-black/10 dark:border-white/10 backdrop-blur-md rounded-full">
-          <Link href="/" className="text-xl font-bold text-blue-500">
+          <Link href="/" className="text-xl font-bold text-indigo-500">
             CK
           </Link>
 
           <div className="hidden sm:flex items-center gap-1 bg-zinc-800/50 p-1 rounded-full">
             {navLinks.map((link) => (
               <Link key={link.name} href={link.href} passHref>
-                <Button variant="ghost" className="rounded-full text-sm font-normal px-4 text-zinc-300 hover:bg-zinc-700/50 hover:text-white">
+                <Button
+                  variant="ghost"
+                  className="rounded-full text-sm font-normal px-4 text-zinc-300 hover:bg-zinc-700/50 hover:text-white"
+                >
                   {link.name}
                 </Button>
               </Link>
@@ -55,7 +58,7 @@ export const Navbar = () => {
 
           <div className="flex items-center gap-2">
             <a href="#contact">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full text-sm font-normal">
+              <Button className="bg-indigo-600 hover:bg-indigo-700 text-white rounded-full text-sm font-normal">
                 Contact Me
               </Button>
             </a>
@@ -74,7 +77,6 @@ export const Navbar = () => {
         </div>
       </motion.nav>
 
-      
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -90,7 +92,7 @@ export const Navbar = () => {
                   <Button
                     variant="ghost"
                     className="w-full text-lg"
-                    onClick={() => setIsOpen(false)} 
+                    onClick={() => setIsOpen(false)}
                   >
                     {link.name}
                   </Button>

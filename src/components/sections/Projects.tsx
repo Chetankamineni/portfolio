@@ -64,11 +64,11 @@ export const Projects = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             whileHover={{
               scale: 1.03,
-              boxShadow: "0px 0px 15px rgba(59, 130, 246, 0.4)",
+              boxShadow: "0px 0px 15px rgba(99, 102, 241, 0.4)",
             }}
             className="h-full rounded-2xl overflow-hidden transform-gpu will-change-transform"
           >
-            <Card className="bg-zinc-100 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 h-full flex flex-col rounded-2xl transition-colors duration-300 hover:border-blue-500/60">
+            <Card className="bg-zinc-100 dark:bg-zinc-950 border-zinc-200 dark:border-zinc-800 h-full flex flex-col rounded-2xl transition-colors duration-300 hover:border-indigo-500/60">
               <CardHeader>
                 <CardTitle>{project.title}</CardTitle>
                 <CardDescription className="pt-2 text-zinc-600 dark:text-zinc-400">
@@ -90,7 +90,7 @@ export const Projects = () => {
                     <Link
                       href={project.githubUrl}
                       target="_blank"
-                      className="flex items-center gap-2 text-sm text-zinc-500 hover:text-blue-500 transition-colors"
+                      className="flex items-center gap-2 text-sm text-zinc-500 hover:text-indigo-500 transition-colors"
                     >
                       <Github size={16} />
                       Code
@@ -100,7 +100,7 @@ export const Projects = () => {
                     <Link
                       href={project.liveUrl}
                       target="_blank"
-                      className="flex items-center gap-2 text-sm text-zinc-500 hover:text-blue-500 transition-colors"
+                      className="flex items-center gap-2 text-sm text-zinc-500 hover:text-indigo-500 transition-colors"
                     >
                       <ExternalLink size={16} />
                       Live

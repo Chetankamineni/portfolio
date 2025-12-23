@@ -7,7 +7,10 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col justify-center items-center text-center px-4"
+    >
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,16 +53,27 @@ export const Hero = () => {
         className="mt-8 flex flex-wrap justify-center items-center gap-4"
       >
         {/* --- UPDATED LINK --- */}
-        <a href="/chetan_kamineni resume.pdf" download="Chetan_Kamineni_Resume.pdf">
+        <a
+          href="/chetan_kamineni resume.pdf"
+          download="Chetan_Kamineni_Resume.pdf"
+        >
           <Button>Download Resume</Button>
         </a>
         {/* -------------------- */}
         <div className="flex items-center gap-4">
-          <Link href="https://github.com/Chetankamineni" target="_blank" aria-label="GitHub">
-            <Github className="text-zinc-500 dark:text-zinc-400 hover:text-blue-600 transition-colors" />
+          <Link
+            href="https://github.com/Chetankamineni"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <Github className="text-zinc-500 dark:text-zinc-400 hover:text-indigo-600 transition-colors" />
           </Link>
-          <Link href="https://linkedin.com/in/chetan-kamineni" target="_blank" aria-label="LinkedIn">
-            <Linkedin className="text-zinc-500 dark:text-zinc-400 hover:text-blue-600 transition-colors" />
+          <Link
+            href="https://linkedin.com/in/chetan-kamineni"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="text-zinc-500 dark:text-zinc-400 hover:text-indigo-600 transition-colors" />
           </Link>
         </div>
       </motion.div>

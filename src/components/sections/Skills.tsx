@@ -87,11 +87,11 @@ export const Skills = () => {
             <motion.div
               key={skill.name}
               // Add Tailwind classes for color transition and hover border color
-              className="flex flex-col items-center justify-center gap-4 p-6 rounded-lg bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 transition-colors duration-300 hover:border-blue-500/70"
+              className="flex flex-col items-center justify-center gap-4 p-6 rounded-lg bg-zinc-100 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 transition-colors duration-300 hover:border-indigo-500/70"
               variants={cardVariants}
               whileHover={{
                 scale: 1.05,
-                boxShadow: "0px 0px 20px rgba(59, 130, 246, 0.5)",
+                boxShadow: "0px 0px 20px rgba(99, 102, 241, 0.5)",
                 // REMOVED borderColor from here to prevent the error
               }}
               transition={{ type: "spring", stiffness: 300 }}
