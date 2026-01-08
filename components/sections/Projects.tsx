@@ -8,8 +8,8 @@ import {
   CardDescription,
   CardContent,
   CardFooter,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+} from "../ui/card";
+import { Badge } from "../ui/badge";
 import { Github, ExternalLink } from "lucide-react";
 import Link from "next/link";
 

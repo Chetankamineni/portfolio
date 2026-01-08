@@ -1,16 +1,11 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
+import { Button } from "../ui/button";
+import { Card, CardContent, CardFooter, CardHeader } from "../ui/card";
+import { Input } from "../ui/input";
 import { Send, Bot } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 interface Message {

@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { Button } from "../ui/button";
+import { Card } from "../ui/card";
+import { Input } from "../ui/input";
+import { Textarea } from "../ui/textarea";
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 
 export const Contact = () => {

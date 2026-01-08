@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { Button } from "../ui/button";
+import { ThemeToggle } from "../theme-toggle";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
