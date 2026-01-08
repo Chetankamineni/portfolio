@@ -10,7 +10,8 @@ import {
   CardFooter,
 } from "../ui/card";
 import { Badge } from "../ui/badge";
-import { Github, ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa6";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 const projects = [
@@ -92,7 +93,7 @@ export const Projects = () => {
                       target="_blank"
                       className="flex items-center gap-2 text-sm text-zinc-500 hover:text-indigo-500 transition-colors"
                     >
-                      <Github size={16} />
+                      <FaGithub size={18} />
                       Code
                     </Link>
                   )}

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
-import { Github, Linkedin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import Link from "next/link";
 
 export const Hero = () => {
@@ -66,14 +66,20 @@ export const Hero = () => {
             target="_blank"
             aria-label="GitHub"
           >
-            <Github className="text-zinc-500 dark:text-zinc-400 hover:text-indigo-600 transition-colors" />
+            <FaGithub
+              size={24}
+              className="text-zinc-500 dark:text-zinc-400 hover:text-indigo-600 transition-colors"
+            />
           </Link>
           <Link
             href="https://linkedin.com/in/chetan-kamineni"
             target="_blank"
             aria-label="LinkedIn"
           >
-            <Linkedin className="text-zinc-500 dark:text-zinc-400 hover:text-indigo-600 transition-colors" />
+            <FaLinkedin
+              size={24}
+              className="text-zinc-500 dark:text-zinc-400 hover:text-indigo-600 transition-colors"
+            />
           </Link>
         </div>
       </motion.div>
