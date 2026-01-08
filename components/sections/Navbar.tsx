@@ -39,7 +39,7 @@ export const Navbar = () => {
         className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[90vw] sm:w-auto"
       >
         <div className="flex items-center justify-between gap-4 px-4 py-2 bg-white/50 dark:bg-black/50 border border-black/10 dark:border-white/10 backdrop-blur-md rounded-full">
-          <Link href="/" className="text-xl font-bold text-indigo-500">
+          <Link href="#home" className="text-xl font-bold text-indigo-500">
             CK
           </Link>
 
