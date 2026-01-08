@@ -54,8 +54,8 @@ export const Hero = () => {
       >
         {/* --- UPDATED LINK --- */}
         <a
-          href="/chetan_kamineni resume.pdf"
-          download="Chetan_Kamineni_Resume.pdf"
+          href="/chetankamineni_resume.pdf"
+          download="chetankamineni_resume.pdf"
         >
           <Button>Download Resume</Button>
         </a>
