@@ -55,11 +55,6 @@ const skillsList = [
   },
 ];
 
-const cardVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0 },
-};
-
 export const Skills = () => {
   return (
     <section id="skills" className="py-20 px-4">
@@ -75,34 +70,41 @@ export const Skills = () => {
           My expertise and technical proficiencies
         </p>
       </motion.div>
-      <div className="max-w-4xl mx-auto">
-        <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ staggerChildren: 0.05 }}
-        >
-          {skillsList.map((skill) => (
-            <motion.div
-              key={skill.name}
-              // Add Tailwind classes for color transition and hover border color
-              className="flex flex-col items-center justify-center gap-4 p-6 rounded-lg bg-zinc-100 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 transition-colors duration-300 hover:border-indigo-500/70"
-              variants={cardVariants}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 0px 20px rgba(99, 102, 241, 0.5)",
-                // REMOVED borderColor from here to prevent the error
-              }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              {skill.icon}
-              <p className="text-sm font-medium text-center text-zinc-700 dark:text-zinc-300">
-                {skill.name}
-              </p>
-            </motion.div>
-          ))}
-        </motion.div>
+      {/* Constraints maintained without the border/background box */}
+      <div className="max-w-4xl mx-auto overflow-hidden relative">
+        {/* Faded Left Overlay (Matches page background) */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white dark:from-black to-transparent z-10" />
+
+        {/* Faded Right Overlay (Matches page background) */}
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white dark:from-black to-transparent z-10" />
+
+        <div className="flex relative py-6">
+          <motion.div
+            className="flex whitespace-nowrap gap-16"
+            animate={{
+              x: [0, -1800], // Ensure this matches the total width of your icons + gaps
+            }}
+            transition={{
+              duration: 35,
+              repeat: Infinity,
+              ease: "linear",
+            }}
+          >
+            {[...skillsList, ...skillsList].map((skill, index) => (
+              <div
+                key={`${skill.name}-${index}`}
+                className="flex flex-col items-center justify-center min-w-[80px] gap-3 group"
+              >
+                <div className="transition-transform duration-300 group-hover:scale-110">
+                  {skill.icon}
+                </div>
+                <p className="text-xs font-semibold text-zinc-500 dark:text-zinc-400 group-hover:text-indigo-500 transition-colors">
+                  {skill.name}
+                </p>
+              </div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </section>
   );

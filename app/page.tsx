@@ -4,6 +4,7 @@ import { About } from "../components/sections/About";
 import { ChatSection } from "../components/sections/ChatSection";
 import { Experience } from "../components/sections/Experience";
 import { Skills } from "../components/sections/Skills";
+import { GithubHeatmap } from "../components/sections/GithubHeatmap"; // New Import
 import { Projects } from "../components/sections/Projects";
 import { Contact } from "../components/sections/Contact";
 import { ScrollProgress } from "../components/scroll-progress";
@@ -18,6 +19,7 @@ export default function Home() {
       <ChatSection />
       <Experience />
       <Skills />
+      <GithubHeatmap /> {/* Added Heatmap here */}
       <Projects />
       <Contact />
       <footer className="text-center py-6 text-zinc-500">
