@@ -6,6 +6,7 @@ import { Experience } from "../components/sections/Experience";
 import { Skills } from "../components/sections/Skills";
 import { GithubHeatmap } from "../components/sections/GithubHeatmap"; // New Import
 import { Projects } from "../components/sections/Projects";
+import { Blog } from "../components/sections/Blog";
 import { Contact } from "../components/sections/Contact";
 import { ScrollProgress } from "../components/scroll-progress";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Skills />
       <GithubHeatmap /> {/* Added Heatmap here */}
       <Projects />
+      <Blog />
       <Contact />
       <footer className="text-center py-6 text-zinc-500">
         &copy; {new Date().getFullYear()} Chetan Kamineni. All Rights Reserved.
