@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     "Portfolio of Chetan Kamineni, a software developer specializing in React, Node.js, and Machine Learning.",
   other: {
     "msvalidate.01": "CE4E5D384725C0E0C0333BBE6D564222",
+    "google-site-verification": "2M1xcu_OUHWWrAqZB8CAAoEJ7f6lAy0Q9j6HMpGG47o",
   },
 };
 
