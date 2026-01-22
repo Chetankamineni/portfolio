@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Chetan Kamineni | Software Developer",
   description:
     "Portfolio of Chetan Kamineni, a software developer specializing in React, Node.js, and Machine Learning.",
+  other: {
+    "msvalidate.01": "CE4E5D384725C0E0C0333BBE6D564222",
+  },
 };
 
 export default function RootLayout({
