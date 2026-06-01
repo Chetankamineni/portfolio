@@ -20,7 +20,7 @@ export default function Home() {
       <ChatSection />
       <Experience />
       <Skills />
-      <GithubHeatmap /> {/* Added Heatmap here */}
+      <GithubHeatmap />
       <Projects />
       <Blog />
       <Contact />

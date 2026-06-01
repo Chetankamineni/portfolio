@@ -2,6 +2,7 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "../components/theme-provider"; // <-- Import
 
@@ -33,6 +34,11 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Script
+          defer
+          src="http://localhost:3000/script.js"
+          data-website-id="115f6ce8-384b-4284-8033-34bd38b143b9"
+        />
       </body>
     </html>
   );

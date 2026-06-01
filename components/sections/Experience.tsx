@@ -5,6 +5,17 @@ import { Card, CardHeader, CardTitle, CardContent } from "../ui/card";
 
 const experiences = [
   {
+    company: "Linkfields Innovations",
+    role: "Software Trainee",
+    date: "Jan 2026 - Jun 2026",
+    location: "Hyderabad, India", // Inferred location
+    description: [
+      "Developed and deployed serverless backend functionality using AWS Lambda, designing event-driven functions to handle API requests and automate workflows with improved scalability and cost efficiency.",
+      "Built and customized web solutions integrating Drupal for backend content management and Next.js for frontend rendering, enabling dynamic, SEO-friendly, and high-performance web applications.",
+      "Implemented full-stack integrations by connecting APIs, managing data flow between serverless services and CMS, and optimizing performance through caching, routing strategies, and efficient component design.",
+    ],
+  },
+  {
     company: "Ektha Tech",
     role: "Software Development Intern",
     date: "May 2025 - Jun 2025",
